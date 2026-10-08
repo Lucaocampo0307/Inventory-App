@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory app</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <header class="header">
+        <nav class="navBar">
+            <ul class="navBar__list">
+                <li class="navBar__item left--item"><a class="navBar__link" href="#"><span class="material-symbols-outlined">Home</span></a></li>
+                <li class="navBar__item"><input class="navBar__search-bar" type="text" name="" id="search-bar" value="PROXIMAMENTE - EN DESARROLLO" disabled></li>
+                <li class="navBar__item"><button class="navBar__add"><span class="material-symbols-outlined">Add</span></button></li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="category">
+        <h2 class="category__title">Categorias</h2>
+        <details class="category__dropdown">
+            <summary class="category__description">PROXIMAMENTE</summary>
+            <ul class="category__list">
+                <li class="category__item">EN DESARROLLO</li>
+                <li class="category__item">EN DESARROLLO</li>
+                <li class="category__item">EN DESARROLLO</li>
+            </ul>
+        </details>
+    </aside>
+    <main class="main">
+        <!-- <div class="card"> 
+            <img src="assets/fix3x12.webp" alt="Tornillo fix 3x12" class="card__thumbnail">
+            <h3 class="card__name">Fix 3x12</h3>
+            <ul class="card__list">
+                <li class="card__item">$1000x10</li>
+                <li class="card__item">700</li>
+            </ul>
+        </div>
+        -->
+    </main>
+    <div class="overlay oculto">
+        <form action="" class="form">
+            <label class="form__input" for="product-image">Elegir foto del producto</label>
+            <input class="form__input" hidden type="file" name="product-image" id="product-image">
+            <span id="nombre-archivo">Ningun archivo seleccionado</span>
+            <input class="form__input" placeholder="Nombre del producto..." type="text" name="product-name" id="product-name">
+            <div>
+                <input class="form__input inp--short" placeholder="Precio del producto..." type="number" name="product-price" id="product-price">
+                <input class="form__input inp--short" placeholder="Cantidad en stock" type="number" name="product-stock" id="product-stock">
+            </div>
+            <input class="form__input" type="submit" value="Agregar producto al inventario">
+        </form>
+        <button><span class="material-symbols-outlined">close</span></button>
+    </div>
+</body>
+</html>
